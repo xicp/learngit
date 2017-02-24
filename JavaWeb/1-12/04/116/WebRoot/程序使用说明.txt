@@ -1,0 +1,1 @@
+本实例中用到了jsf-api.jar包、jsf-impl.jar包、jstl-1.2.jar包，在运行前，需要将其拷贝到程序的\WEB-INF\lib路径下。

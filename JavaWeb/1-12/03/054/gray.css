@@ -1,0 +1,84 @@
+﻿
+body{
+	font-family: "宋体";
+	font-size: 9pt;
+	font-style: normal;
+	line-height: 160%;
+	color: #333333;
+}
+a:hover {
+	font-size: 9pt;	color: #FF0000;
+}
+a {
+	font-size: 9pt;	text-decoration: none;color: #999999;
+}
+
+.button {
+	font-family: "宋体";	font-size: 9pt;color: #333333;	
+	background-color: #eeeeee;cursor: hand;padding:1px;height:19px;
+	border-top: 1px solid #FFFFFF;border-right:1px solid #666666;
+	border-bottom: 1px solid #666666;border-left: 1px solid #FFFFFF;
+} 
+
+TD {
+	FONT-SIZE: 9pt;
+	COLOR: #333333;
+	LINE-HEIGHT: 160%;
+} 
+.table-1 {
+	border: 1px dotted #CCCCCC;
+}
+.table-zuoyou {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: dotted;
+	border-left-style: dotted;
+	border-right-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+}
+.wenbenkuang {
+	font-family: "宋体";
+	font-size: 9pt;
+	color: #333333;
+	border: 1px solid #999999;
+
+}
+.table-shangxia {
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: dotted;
+	border-bottom-style: dotted;
+	border-top-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+}
+.table-you {
+	border-right-width: 1px;
+	border-right-style: dotted;
+	border-right-color: #cccccc;
+}
+.table-zuo {
+	border-left-width: 1px;
+	border-left-style: dotted;
+	border-left-color: #CCCCCC;
+}
+.table-shang {
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #CCCCCC;
+}
+.table-xia {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #CCCCCC;
+}
+.table-xiayou {border-bottom-width: 1px;border-bottom-style: dotted;
+border-bottom-color: #cccccc;border-right-width: 1px;
+border-right-style: dotted;border-right-color: #cccccc;}
+.table-zuoshang {
+	border-left-width: 1px;border-left-style: dotted;
+	border-left-color: #cccccc;
+	border-top-width: 1px;
+	order-top-style: dotted;
+	border-top-color: #cccccc;
+	border-top-style: dotted;
+}

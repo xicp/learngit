@@ -1,0 +1,1 @@
+本实例中用到了SQL Server 2000数据库驱动包(msbase.jar、mssqlserver.jar、msutil.jar)，在运行前，需要将其拷贝到程序的\WEB-INF\lib路径下。

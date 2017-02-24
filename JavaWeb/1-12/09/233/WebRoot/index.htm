@@ -1,0 +1,76 @@
+<html><head>
+<title>实时显示系统时间</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href="Css/style.css" rel="stylesheet">
+<script language="javascript">
+function clockon(bgclock){
+	var now=new Date();
+	var year=now.getYear();
+	var month=now.getMonth();
+	var date=now.getDate();
+	var day=now.getDay();
+	var hour=now.getHours();
+	var minu=now.getMinutes();
+	var sec=now.getSeconds();
+	var week;
+	month=month+1;
+	if(month<10) month="0"+month;
+	if(date<10) date="0"+date;
+	if(hour<10) hour="0"+hour;
+	if(minu<10) minu="0"+minu;
+	if(sec<10) sec="0"+sec;
+	var arr_week=new Array("星期日","星期一","星期二","星期三","星期四","星期五","星期六");
+	week=arr_week[day];
+	var time="";
+	time=year+"年"+month+"月"+date+"日 "+week+" "+hour+":"+minu+":"+sec;
+	if(document.all){
+		bgclock.innerHTML="系统公告：["+time+"]"
+	}
+	var timer=setTimeout("clockon(bgclock)",200);
+} 
+
+</script>
+</head>
+<body onLoad="clockon(bgclock)">
+<table width="100%" height="95"  border="0" cellpadding="-2" cellspacing="-2" class="tableBorder_Top">
+          <tr valign="top">
+            <td height="72" colspan="4"><table width="100%"  border="0" cellpadding="-2" cellspacing="-2" class="tableBorder_Botton">
+              <tr>
+                <td width="33%" height="67" align="right"><img src="Images/board_title.gif" width="271" height="44"></td>
+                <td width="67%" background="Images/banner_bg.gif">&nbsp;</td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td width="10" height="24" background="Images/bg_Navigate.GIF">&nbsp; </td>
+			<!--版主登录时显示的导航条-->
+            <td background="Images/bg_Navigate.GIF">
+			
+				<a href="#">用户注册</a> ┊
+			<a href="#">用户登录</a>
+			┊ <a href="#">查看留言</a> ┊ <a href="#" onClick="window.location.reload();">刷新页面</a> ┊ 
+				<a href="#">版主登录</a>  </td>
+            <td width="20" background="Images/bg_Navigate.GIF"><img src="Images/index.gif" width="14" height="14"></td>
+            <td width="80" background="Images/bg_Navigate.GIF"><a href="#">返回首页</a><font color="#FFFFFF"></td>
+          </tr>
+</table></td>
+      </tr>
+    </table>
+      <table width="100%" height="45"  border="0" cellpadding="-2" cellspacing="-2">
+        <tr>
+          <td>  &nbsp;<img src="Images/speaker.gif" width="20" height="20"></td>
+		  <td><div id="bgclock" class="word_grey"></div></td>
+		  <td class="word_grey">
+		    <div align="right">		      
+		   您现在是游客身份！若要留言请先注册或登录！
+	      </div></td>
+		  <td height="25" colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="34">&nbsp;</td>
+          <td width="723" height="13" colspan="2"></td>
+          <td width="20">&nbsp;</td>
+        </tr>
+      </table>
+</body>
+</html>

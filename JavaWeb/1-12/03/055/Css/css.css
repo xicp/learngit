@@ -1,0 +1,39 @@
+/* CSS Document */
+<!--
+Td{
+	font-size:9pt;
+}
+Td.color{
+	font-size:9pt;color:#FFFFFF
+}
+	Td.Paragraph{
+	Line-Height:16pt;
+}
+Input.Text2{
+	width:100px;height:20px;border:#6b0200 1px solid;
+}
+Input.Text{
+	width:150px;height:20px;border:1px solid;
+}
+Input.Button{
+	width:40;height:18;border:1px solid;
+}
+Input.File{
+	width:300px;border:1px solid;
+}
+TextArea{
+	width:300px;height:127px;border:1px solid;
+}
+
+A:hover{
+	text-decoration:underline;color:red;
+}
+A.menu{
+	text-decoration:none;color:yellow;
+}
+A.menu:hover{
+	text-decoration:underline;color:yellow;
+}
+-->
+
+

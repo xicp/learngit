@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>文字的扭曲动画</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style type="text/css">
+.mydiv {
+	width:300px;
+	height:150px;
+	font-family:黑体;
+	font-size:50px;
+	color:#00AAFF;
+	filter:wave(freq=6, strength=4, phase=5, lightstrength=45, add=0, enabled=1)
+}
+</style>
+
+<script language="javascript">
+var p=2;
+function sport(){
+	div1.filters.wave.phase=p;
+	p=p+2;	
+	setTimeout("sport()",20);
+}
+</script>
+</head>
+
+<body onload="sport()">
+
+<div id="div1" class="mydiv">明日科技</div>
+
+</body>
+</html>

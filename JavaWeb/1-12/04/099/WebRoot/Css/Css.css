@@ -1,0 +1,12 @@
+/* CSS Document */
+td{font-size:9pt;}
+input.text{height:20;border:1px solid;}
+input.button{width:40;height:18;border:1px solid;}
+input.file{width:300;border:1px solid;}
+textarea{border:1px solid;}
+A{text-decoration:none;color:black;}
+A:hover{text-decoration:underline;color:red;}
+A.nq{text-decoration:none;color:black;}
+A.nq:hover{text-decoration:underline;color:white;}
+text{height:20;border:1px solid;}
+

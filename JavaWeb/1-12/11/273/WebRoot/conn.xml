@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DBCon>
+	<driverClassName>com.mysql.jdbc.Driver</driverClassName>
+	<connection_url>jdbc:mysql://localhost:3306/db_database11</connection_url>
+	<user>root</user>
+	<password>111</password>
+</DBCon>

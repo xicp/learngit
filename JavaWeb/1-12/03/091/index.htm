@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>图片的半透明效果</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+<style type="text/css">
+.transparency {
+	filter:Alpha(Opacity=5,finishOpacity=80,style=3,startX=20,startY=20,finishX=100,finishY=100)
+}
+</style>
+
+<script type="text/javascript">
+	var i=5;
+	function init(){
+		document.all.myimg.filters.alpha.opacity=i;//给图片对象滤镜中的透明度属性赋值 
+		i+=5;
+		if(i==100){				//当表示透明度的i=100时，重新指定i=5
+			i=5;
+		}
+		setTimeout("init()",100);//每隔100毫秒，调用一次init()方法改变图片透明度 
+	}
+</script>
+</head>
+
+<body onload="init()">
+
+<table  border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td>
+    
+    <img src="img1.jpg" id="myimg" width="378"  height="275" border="0" class="transparency">
+    </td>
+  </tr>
+</table>
+</body>
+</html>

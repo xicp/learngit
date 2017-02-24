@@ -1,0 +1,31 @@
+body,td,th {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family: "ËÎÌו";
+	font-size: 12px;
+	color:#333333;
+	line-height:20px;
+}
+a{
+	font-size: 13px;
+	line-height:24px;
+	font-weight:bold;
+}
+a:link {
+	color: #013b76;
+	text-decoration: none;
+	}
+a:visited {
+	color:#013b76;
+	text-decoration:none;
+}
+a:hover {
+	color: #4e7301;
+	text-decoration:underline;
+}
+a:active {
+	color:#013b76;
+	text-decoration:none;
+}

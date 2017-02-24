@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+ 	<tlib-version>1.0</tlib-version>
+ 	<short-name>mytag</short-name>
+ 	<uri>http://www.tag.com/mytag</uri>
+ 	<tag>
+ 		<description>生成随机数</description><!-- 标签描述 -->
+ 		<name>randomNum</name><!-- 标签名称 -->
+		<tag-class>com.jwy.tag.RandomNum</tag-class><!-- 标签路径 -->
+		<body-content>empty</body-content><!-- 标签体 -->
+		<attribute>
+			<name>length</name><!-- 属性名称 -->
+			<required>true</required><!-- 是否必须指定此属性 -->
+			<rtexprvalue>true</rtexprvalue><!-- 是否能接受JSP表达式或EL表达式 -->
+		</attribute> 
+ 	</tag>
+</taglib>

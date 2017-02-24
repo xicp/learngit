@@ -1,0 +1,54 @@
+﻿<!--
+body {
+	FONT-SIZE: 9pt;
+	margin-left:0px;
+	margin-top:0px;
+	SCROLLBAR-FACE-COLOR: #76B30F;
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	SCROLLBAR-SHADOW-COLOR: #fcfcfc; COLOR: #000000;
+	SCROLLBAR-3DLIGHT-COLOR: #ececec;
+	SCROLLBAR-ARROW-COLOR: #ffffff;
+	SCROLLBAR-TRACK-COLOR: #ececec;
+	SCROLLBAR-DARKSHADOW-COLOR: #999966;
+	BACKGROUND-COLOR: #fcfcfc
+
+}
+td {
+	font-size: 9pt;	line-height:150%;
+}
+a:hover {
+	font-size: 9pt;	color: #FF0000;
+}
+a {
+	font-size: 9pt;	text-decoration: none;	color: #3C404D;
+}
+.btn_grey {
+	font-family: "宋体";	font-size: 9pt;color: #333333;
+	background-color: #eeeeee;cursor: hand;padding:1px;height:19px;
+	border-top: 1px solid #FFFFFF;border-right:1px solid #666666;
+	border-bottom: 1px solid #666666;border-left: 1px solid #FFFFFF;
+}
+input {
+	font-family: "宋体";
+	font-size: 9pt;
+	color: #333333;
+	border: 1px solid #444444;
+}
+
+.noborder{
+border-style:none;
+}
+.prog_border {
+  height: 15px;		/*高度*/
+  width: 235px;		/*宽度*/
+  background: #FFFFFF;		/*背景颜色*/
+  border: 1px solid #000;	/*边框样式*/
+  margin: 0;
+  padding: 0;
+  display:none; 		/*不显示*/
+  position:relative;
+  left:25px;
+  float:left;			/*居左对齐*/
+}
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">

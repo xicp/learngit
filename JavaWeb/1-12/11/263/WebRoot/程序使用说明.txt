@@ -1,0 +1,1 @@
+本实例中用到了jstl.jar包、standard.jar包，在运行前，需要将其拷贝到程序的\WEB-INF\lib路径下。

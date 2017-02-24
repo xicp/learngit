@@ -1,0 +1,1 @@
+在Eclipse或MyEclipse中新建项目，然后将此光盘的WebRoot文件夹下所有文件复制到新建项目的WebRoot目录下,将src目录复制到新建项目的src目录。

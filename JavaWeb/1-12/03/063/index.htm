@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>霓虹灯效果的边框</title>
+
+<script language="javascript">
+	var i=0;
+	var Color= new Array("#0000FF","#99FF00","#660033","#CC66CC","#FFFF33");//定义颜色值的数组 
+	function change(){
+		if (i>Color.length-1)
+			i=0;							//如果i的值大于数组的元素数，则将i的值改为0
+		table1.style.borderColor=Color[i];	//改变表格边框颜色 
+		i+=1;
+		setTimeout("change()",500);				//每隔500毫秒调用一次该方法 
+	}
+
+</script>
+
+</head>
+
+<body onload="change()">
+
+<table id="table1" border=5> 
+	<tr>
+		<td align=center><strong>明日科技</strong></td>
+	</tr> 
+	<tr>
+		<td align=center><pre>霓虹灯效果</pre></td>
+	</tr>
+</table>
+
+</body>
+</html>

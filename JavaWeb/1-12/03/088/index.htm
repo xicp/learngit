@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>无标题文档</title>
+</head>
+
+<body>
+<div id="shadow" style="position:absolute;visibility:visible;top:12px; left:12px"></div>
+<div id="showstr" style="position:absolute;visibility:visible;top:10px; left:10px"></div>
+<script language="javaScript">
+var space=0
+var word=0
+var Tstr = new Array()
+Tstr[0]="明日科技"
+Tstr[1]="欢迎购买明日科技图书"
+Tstr[2]="明日科技网址：www.mingrisoft.com"
+function exportstr() {		
+if (space <= document.body.clientWidth) {
+	showstr.innerHTML="<span id='p1' style='position:absolute;font-family:宋体;font-size:30pt;color:3399FF;clip:rect(2px "+space+"px 200px 0px)'>"+Tstr[word]+"</span>"
+	shadow.innerHTML="<span style='position:absolute;font-family:宋体;font-size:30pt;color:888888; clip:rect(2px "+space+"px 200px 0px)'>"+Tstr[word]+"</span>"
+	space=space+30
+	var timer=setTimeout("exportstr()",30)	
+}
+else {
+	document.close()
+	clearTimeout(timer)
+	word++
+	space=0
+	if (word >= Tstr.length) {word=0}	
+	var intermezzo=setTimeout("exportstr()",100)
+}
+}
+exportstr();
+</script>
+
+</body>
+</html>

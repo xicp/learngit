@@ -1,0 +1,35 @@
+运行本实例之前，请将 mysql-connector-java-5.1.6-bin.jar包拷贝到Tomcat服务器安装目录的lib目录下
+由于Tomcat的版本不同，配置数据库连接池有所差异，以下给出两种配置方法。
+ 方法一：在server.xml中进行配置
+ 在Tomcat安装目录中的conf文件夹中，找到server.xml文件，添加一个<Resource>（将以下内容复制到server.xml中），运行程序即可：
+<Resource name="jdbc/mysql" auth="Container"
+         type="javax.sql.DataSource"
+         maxActive="100" 
+         maxIdle="30"    
+         maxWait="10000"
+         username="root" 
+         password="111"
+         driverClassName="com.mysql.jdbc.Driver"
+         url="jdbc:mysql://localhost:3306/db_database06?autoReconnect=true"/>
+         
+方法二：在context.xml中进行配置
+(1)在Tomcat安装目录中的conf文件夹中，找到context.xml文件，在<context>元素下添加一个<Resource>
+（将以下内容复制到context.xml中）：
+<Resource name="jdbc/mysql" auth="Container"
+         type="javax.sql.DataSource"
+         maxActive="100" 
+         maxIdle="30"    
+         maxWait="10000"
+         username="root" 
+         password="111"
+         driverClassName="com.mysql.jdbc.Driver"
+         url="jdbc:mysql://localhost:3306/db_database06?autoReconnect=true"/>
+(2)在web.xml中加入<resource-ref>元素，如下：
+  <resource-ref>
+  	<description>conn</description>
+  	<res-ref-name>jdbc/mysql</res-ref-name>
+  	<res-type>javax.sql.DataSource</res-type>
+  	<res-auth>Container</res-auth>
+  </resource-ref>
+         
+

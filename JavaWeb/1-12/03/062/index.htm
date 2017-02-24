@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<script type="text/javascript">
+
+	function over(id){
+		var tableObj = document.getElementById("table1");
+		for(var i=0;i<tableObj.rows;i++){
+			alert(tableObj.rows[i].cells[0].innerHTML);
+		}
+		
+		document.getElementById(id).style.borderLeftColor="green";
+		document.getElementById(id).style.borderRightColor="green";
+		document.getElementById(id).style.borderTopColor="green";
+		document.getElementById(id).style.borderBottomColor="green";
+	}
+	
+	function out(id){
+	
+		document.getElementById(id).style.borderLeftColor="pink";
+		document.getElementById(id).style.borderRightColor="pink";
+		document.getElementById(id).style.borderTopColor="pink";
+		document.getElementById(id).style.borderBottomColor="pink";
+	}
+</script>
+</head>
+
+<body>
+<table id="table1"  width="200" border="1px" bordercolor="pink">
+  <tr>
+  
+    <td width="60" id="Ttd0" onmouseover="over('Ttd0')" onmouseout="out('Ttd0')">&nbsp;</td>
+    <td width="58" id="Ttd1" onmouseover="over('Ttd1')" onmouseout="out('Ttd1')">箱数</td>
+    <td width="66" id="Ttd2">单价</td>
+  </tr>
+  <tr>
+    <td id="Ttd3">苹果</td>
+    <td id="Ttd4">50</td>
+    <td id="Ttd5">30</td>
+  </tr>
+  <tr>
+    <td id="Ttd6">香蕉</td>
+    <td id="Ttd7">60</td>
+    <td id="Ttd8">35</td>
+  </tr>
+</table>
+
+</body>
+</html>

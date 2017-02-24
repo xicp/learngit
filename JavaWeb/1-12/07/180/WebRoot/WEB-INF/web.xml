@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <filter>
+  		<filter-name>firstFilter</filter-name><!--过滤器名称 -->
+  		<filter-class>com.mr.firstFilter</filter-class><!--过滤器的实现类 -->
+  </filter>
+  <filter-mapping>
+  	<filter-name>firstFilter</filter-name> <!--映射过滤器名称 -->
+  	<url-pattern>/*</url-pattern><!--使用通配符*什么请求都经过滤器 -->
+  </filter-mapping>
+</web-app>
